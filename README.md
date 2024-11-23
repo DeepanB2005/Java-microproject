@@ -24,61 +24,7 @@ JDBC (Java Database Connectivity):
 Seamless integration of Java with MySQL for CRUD operations.
 Swing Framework:
 GUI components such as JTextField, JComboBox, and JTextArea.
-Database Schema
-The feedback data is stored in the teacher_feedback table in the feedback_db database.
-
-Column Name	Data Type	Description
-id	INT	Auto-increment primary key.
-student_name	VARCHAR(255)	Name of the student.
-teacher_name	VARCHAR(255)	Name of the teacher.
-interaction	INT	Rating for interaction skills (1-5).
-teaching	INT	Rating for teaching skills (1-5).
-knowledge	INT	Rating for subject knowledge (1-5).
-clarity	INT	Rating for clarity (1-5).
-punctuality	INT	Rating for punctuality (1-5).
-comments	TEXT	Additional comments by the student.
-Setup Instructions
-1. Prerequisites
-JDK (Java Development Kit) installed (JDK 17 or higher recommended).
-MySQL installed and running.
-MySQL Connector/J (JDBC Driver) downloaded.
-2. Database Setup
-Open MySQL Workbench or CLI.
-Execute the following SQL script to create the database and table:
-sql
-Copy code
-CREATE DATABASE feedback_db;
-
-USE feedback_db;
-
-CREATE TABLE teacher_feedback (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    student_name VARCHAR(255) NOT NULL,
-    teacher_name VARCHAR(255) NOT NULL,
-    interaction INT CHECK (interaction BETWEEN 1 AND 5),
-    teaching INT CHECK (teaching BETWEEN 1 AND 5),
-    knowledge INT CHECK (knowledge BETWEEN 1 AND 5),
-    clarity INT CHECK (clarity BETWEEN 1 AND 5),
-    punctuality INT CHECK (punctuality BETWEEN 1 AND 5),
-    comments TEXT
-);
-3. Project Setup
-Clone or download the project files.
-Add the MySQL Connector/J JAR file to your project classpath.
-4. Compilation and Execution
-Open a terminal or command prompt.
-Navigate to the project directory and compile the code:
-bash
-Copy code
-javac -d . -cp mysql-connector-j-X.X.X.jar com/feedback/*.java
-Run the application:
-bash
-Copy code
-java -cp ".;mysql-connector-j-X.X.X.jar" com.feedback.TeacherFeedbackForm
-How to Use
-Run the Program:
-Launch the application.
-Submit Feedback:
+Data
 Fill in the form fields, including student and teacher names, ratings, and comments.
 Click Submit to save the feedback to the database.
 View Feedback:
