@@ -17,5 +17,5 @@ Languages:
 Java: For application logic and GUI.
 SQL: For database management and data storage.
 
-Conclusion
+ In Conclusion
 This project provides an efficient and user-friendly solution for collecting, storing, and analyzing teacher feedback. It is designed to improve teaching quality through constructive feedback and data-driven insights.
