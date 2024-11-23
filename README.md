@@ -16,22 +16,6 @@ Technologies Used
 Languages:
 Java: For application logic and GUI.
 SQL: For database management and data storage.
-Concepts:
-Object-Oriented Programming (OOP):
-Classes and objects for modular design.
-Encapsulation and abstraction to manage feedback operations.
-JDBC (Java Database Connectivity):
-Seamless integration of Java with MySQL for CRUD operations.
-Swing Framework:
-GUI components such as JTextField, JComboBox, and JTextArea.
-Data
-Fill in the form fields, including student and teacher names, ratings, and comments.
-Click Submit to save the feedback to the database.
-View Feedback:
-Query the database directly or implement a feature to retrieve and display feedback records.
-Future Enhancements
-Generate graphical reports for teacher performance.
-Convert the desktop application into a web-based or mobile-friendly solution.
-Add login authentication for students and administrators.
+
 Conclusion
 This project provides an efficient and user-friendly solution for collecting, storing, and analyzing teacher feedback. It is designed to improve teaching quality through constructive feedback and data-driven insights.
